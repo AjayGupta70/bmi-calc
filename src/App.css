@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.App__main{
+    /* border: 2px solid rgb(255, 0, 0); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+    height: 90%;
+    border: 2px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card__body{
+    border: 2px solid rgb(78, 66, 66);
+    /* height: 300px;
+    width: 500px; */
+    min-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 1rem;
+    align-items: center;
+    border: none;
+    transition: 0.25s;
 }
 
-.App-link {
-  color: #61dafb;
+.card__body:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inptTxt{
+    width: 90%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(43, 201, 159);
+    padding: 0 1rem;
+    color: rgb(110, 110, 110);
+    transition: 0.25s;
+}
+
+.inptTxt:hover{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.inptBrd{
+    padding-bottom: 3rem;
+    width: 75%;
+    color: rgb(110, 110, 110);
+}
+
+.btncntr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    color: rgb(110, 110, 110);
+
+}
+
+.submit__btn{
+    height: 2rem;
+    width: 60%;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(43, 201, 159);
+    border: none;
+    border-radius: 7px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.submit__btn:hover{
+    background-color: rgb(38, 160, 128);
+    border-radius: 25px;
+}
+
+.resultBox{
+    padding: 10px 0;
+    margin-top: 1rem;
+    border: 2px solid rgb(47, 193, 193);
+    width: 50%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
